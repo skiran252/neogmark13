@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
-export default function Form({checkIfLucky}) {
+export default function Form({checkIfPalindrome}) {
   const [dob, setDOB] = useState(new Date());
-  const [luckynumber, setluckynumber] = useState(0);
   return (
     <div className="d-flex justify-content-center">
       <div>
@@ -15,19 +14,7 @@ export default function Form({checkIfLucky}) {
             onChange={(event) => setDOB(event.target.value)}
           />
         </div>
-        <div className="form-group mt-2">
-          <label>Your lucky number</label>
-          <input
-            type="number"
-            min="0"
-            className="form-control"
-            id="luckynumber"
-            value={parseInt(luckynumber)}
-            onChange={(event) => setluckynumber(event.target.value)}
-            placeholder="Enter your lucky number"
-          />
-        </div>
-        <button className="btn btn-primary mt-5" onClick={()=>checkIfLucky(dob,luckynumber)} >Check if lucky</button>
+        <button className="btn btn-primary mt-5" onClick={()=>checkIfPalindrome(dob)} >Check Palindrome</button>
       </div>
     </div>
   );
