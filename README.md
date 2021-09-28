@@ -1,4 +1,4 @@
-# find out if your birthday is a palindrome
+# Find out if your birthday is a palindrome
 enter your dateOfBirth and know if its a palindrome or this app tells you nearest palindromic date your dob missed by
 ---
 ## Technologies used
